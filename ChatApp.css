@@ -1,0 +1,142 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.chat-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.user-section, .chat-section {
+    padding: 20px;
+}
+
+.user-section {
+    text-align: center;
+}
+
+.user-section h1 {
+    margin-bottom: 20px;
+}
+
+.user-section input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+.user-section button {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-section button:hover {
+    background-color: #0b5ed7;
+}
+
+.chat-section {
+    display: none;
+}
+
+.users-list {
+    margin-bottom: 10px;
+}
+
+.users-list h4 {
+    margin-bottom: 10px;
+}
+
+.users-list div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.users-list .online-icon {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.message-input {
+    display: flex;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.message-input button:hover {
+    background-color: #0b5ed7;
+}
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+    display: inline-block;
+    clear: both;
+}
+
+.user-message {
+    background-color: #0d6efd;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.dummy-reply {
+    background-color: #f0f0f0;
+    color: black;
+    align-self: flex-end;
+    text-align: right;
+}
